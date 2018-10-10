@@ -2,18 +2,12 @@ import {Component} from 'angular2/core';
  
 @Component({
     selector: 'my-app',
-    template: `<h1>{{titulo}}</h1>
-               <ul>
-               <li>Titulo:<strong>{{pelicula}}</strong></li>
-               <li>Director:<strong>{{director}}</strong></li>
-               <li>Año:<strong>{{anio}}</strong></li>
-               </ul>     
-               `
+    templateUrl:"app/view/peliculas.html"
 })
  
 export class AppComponent { 
-    public titulo = "Peliculas con Angular 2";
-    pelicula = "Batman vs Superman";
-    director = "Zack Snider";
-    anio = "2016";
+    public titulo:string = "Peliculas con Angular 2";
+    public pelicula:string = "Batman vs Superman";
+    public director:string = "Zack Snider";
+    public anio:number = 2016;
 }
