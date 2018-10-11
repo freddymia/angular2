@@ -25,7 +25,14 @@ System.register(["angular2/core", "./model/pelicula"], function(exports_1, conte
                 function AppComponent() {
                     this.titulo = "Peliculas con Angular 2";
                     this.mostrarDatos = false;
-                    this.pelicula = new pelicula_1.Pelicula(1, "Batman vs Superman", "Zack Snider", 2016);
+                    this.pelicula = new pelicula_1.Pelicula(1, "Batman v Superman", "Zack Snyder", 2016);
+                    this.peliculas = [
+                        new pelicula_1.Pelicula(1, "Toy Story ", "	John Lasseter", 1995),
+                        new pelicula_1.Pelicula(2, "Amélie", "Jean-Pierre Jeunet", 2001),
+                        new pelicula_1.Pelicula(3, "The Dark Knight", "Christopher Nolan", 2008),
+                        new pelicula_1.Pelicula(4, "Fantastic Mr. Fox", "Wes Anderson", 2009),
+                        new pelicula_1.Pelicula(5, "Interstellar ", "Christopher Nolan", 2014)
+                    ];
                     this.debug();
                 }
                 AppComponent.prototype.debug = function (param) {
