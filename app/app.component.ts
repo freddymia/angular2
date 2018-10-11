@@ -19,12 +19,17 @@ export class AppComponent {
         this.debug();
     }
     
-    debug(){
-        console.log(this.pelicula);
+    debug(param = null){
+        if(param != null){
+            console.log(this.pelicula.titulo);
+        }else{
+            console.log(this.pelicula);
+        }
     }
 
     onShowHide(value){
         this.mostrarDatos = value;
     }
 
+  
 }
